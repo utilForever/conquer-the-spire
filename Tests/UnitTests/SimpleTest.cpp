@@ -1,7 +1,7 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
 #include "doctest.h"
 
-#include <Test.hpp>
+#include <conquer-the-spire/Test.hpp>
 
 TEST_CASE("Simple test")
 {
