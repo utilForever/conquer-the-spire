@@ -2,6 +2,31 @@ language: cpp
 
 matrix:
   include:
+    - name: Test Ubuntu 16.04 + gcc-7 + codecov + (sonarcloud)
+      os: linux
+      addons:
+        apt:
+          sources:
+            - ubuntu-toolchain-r-test
+          packages:
+            - g++-7
+        sonarcloud:
+          organization: "utilforever-github"
+          token:
+            secure: "ObqZs8zq+uwYbpoGTGYzo/2wSyt+wHWl4XruDpBTcTd5OahaSODm0g0lRBEMHrcHHdzURUa4Jwc1E3UT0LNqc4ZGI/EhZib389gXq3imodXSvkd1S/fGcbwkVQ7dijAaSf+cBad6ofbb/TVQd73QfQw7RuaVlHZRZYtdpbtM6bdDQ8iQT7tbVo1Vj/BT9WmGLIXHf6V4x0TqEebXmB+LKVpz/fI1H8xA+PwO3xOAzjQ1rtggBRblS9rxBE4DPc14+v7Do9BZk2FU8hZtdpv2bY6qXUSYv/6/ZGHQnEnadjx7VlnHjVWjar6mPm1fDOiNfMCxUqYOc+UxRAL17j6T8IWolLxI/JZK1mogk80JQTAj+JWNmcmmBOzudu8AHCgwNkQM5EZTmTLgXazw5DQ3J3gkCJWrgq5KPY5VayNWt+6OjWeQ6Me99wnsSQA1JMTHgdZszzd8zI56NJN4mahpVHsASJF5isoRQykGa1WzZc921pA3noxVa4yhlTpGEoYMaBSy6pEA1jxnIld93gNnp73uwz2e8hb0HQhZV4lkbyTz3+pJ4mUMpMZ1QqgqpB2APkMH6JU8DQgTXovPDb4oVPGiH/vKJOG5LWCQ79bOo+r2k32j1NkOURTW4sTcPLLaisN0ral0ac+O3HFUftxEg9KZJW5ZnaNNKXwEydZtwGc="
+      dist: xenial
+      sudo: required
+      compiler: gcc
+      env:
+        - BUILD_TYPE=Debug
+      script:
+        - |
+          if [[ -n "${TRAVIS_PULL_REQUEST_SLUG}" && "${TRAVIS_PULL_REQUEST_SLUG}" != "${TRAVIS_REPO_SLUG}" ]]; then
+            echo "The pull request from ${TRAVIS_PULL_REQUEST_SLUG} is an EXTERNAL pull request. Skip sonar analysis."
+            sh Scripts/travis_build_codecov.sh
+          else
+            sh Scripts/travis_build_codecov_sonar.sh
+          fi
     - name: Test Docker based on Ubuntu 18.04 LTS + gcc
       os: linux
       dist: trusty
