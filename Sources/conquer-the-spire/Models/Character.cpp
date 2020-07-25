@@ -5,10 +5,8 @@
 // personal capacity and are not conveying any rights to any intellectual
 // property of any third parties.
 
-#ifndef CONQUER_THE_SPIRE_HPP
-#define CONQUER_THE_SPIRE_HPP
-
 #include <conquer-the-spire/Models/Character.hpp>
-#include <conquer-the-spire/conquer-the-spire.hpp>
 
-#endif  // CONQUER_THE_SPIRE_HPP
+namespace ConquerTheSpire
+{
+}  // namespace ConquerTheSpire
