@@ -19,7 +19,8 @@ def main():
     header = os.path.join(dir_name, "../Includes/conquer-the-spire/conquer-the-spire.hpp")
     header_tmp = header + ".tmp"
     with open(header_tmp, "w") as header_file:
-        header_file.write("""// Copyright (c) 2019 Chris Ohk
+        header_file.write("""// Copyright (c) 2020 conquer-the-spire Team
+// Chris Ohk, Sangyun Chung, Seokwon Moon, Taehwan Yu, Jinwoo Park, Seongmin Cho
 
 // We are making my contributions/submissions to this project solely in our
 // personal capacity and are not conveying any rights to any intellectual

@@ -1,4 +1,5 @@
-// Copyright (c) 2019 Chris Ohk
+// Copyright (c) 2020 conquer-the-spire Team
+// Chris Ohk, Sangyun Chung, Seokwon Moon, Taehwan Yu, Jinwoo Park, Seongmin Cho
 
 // We are making my contributions/submissions to this project solely in our
 // personal capacity and are not conveying any rights to any intellectual
