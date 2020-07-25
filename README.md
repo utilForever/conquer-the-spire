@@ -26,6 +26,7 @@ conquer-the-spire is Slay the Spire simulator using C++ with some reinforcement 
     * Ironclad Cards
     * Silent Cards
     * Defect Cards
+    * Watcher Cards
     * Colorless Cards
     * Status
     * Curse
@@ -33,6 +34,7 @@ conquer-the-spire is Slay the Spire simulator using C++ with some reinforcement 
     * Ironclad
     * Silent
     * Defect
+    * Watcher
   * Enemies
     * Monsters
     * Elites
