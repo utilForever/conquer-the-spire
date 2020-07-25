@@ -104,7 +104,14 @@ You can contact me via e-mail (utilForever at gmail.com). I am always happy to a
 
 The class is licensed under the [MIT License](http://opensource.org/licenses/MIT):
 
-Copyright &copy; 2019 [Chris Ohk](http://www.github.com/utilForever) and [Gyojun Youn](https://github.com/youngyojun).
+Copyright © 2020 conquer-the-spire Team
+
+- [Chris Ohk](https://github.com/utilForever)
+- [Sangyun Chung](https://github.com/starga2er)
+- [Seokwon Moon](https://github.com/you4rin)
+- [Taehwan Yu](https://github.com/PhoenixPlanet)
+- [Jinwoo Park](https://github.com/byeol-lor)
+- [Seongmin Cho](https://github.com/bluetic123)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
